@@ -16,10 +16,10 @@ sudo yum update -y
 # setup some variables
 
 echo "\
-export YOUR_GITHUB_USER='thywoof'
+export YOUR_GITHUB_USER='jcortabitarte'
 
-export YOUR_NAME='Winston Wolfe'
-export YOUR_COMPANY_NAME='Marsellus Wallace Inc.'
+export YOUR_NAME='juan Cortabitarte'
+export YOUR_COMPANY_NAME='despegar'
 
 export YOUR_LICENSE_KEY=cec283018fe0214f68b46ecc1223ffc43818d5ca
 
@@ -37,8 +37,8 @@ export YOUR_MOVIES_SERVICE_URL=http://localhost:3004
 echo "\
 license_key: ${YOUR_LICENSE_KEY}
 custom_attributes:
-    student: ${YOUR_NAME}
-    company: ${YOUR_COMPANY_NAME}
+    student: Juan Cortabitarte
+    company: despegar
 " | sudo tee -a /etc/newrelic-infra.yml
 sudo curl -sLo /etc/yum.repos.d/newrelic-infra.repo \
   https://download.newrelic.com/infrastructure_agent/linux/yum/el/6/x86_64/newrelic-infra.repo
